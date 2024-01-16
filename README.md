@@ -14,14 +14,27 @@
 
 # python-debugtoolkit
 
-> DebugToolkit is a versatile Python package designed for debuging
+> DebugToolkit is a versatile Python package designed for debugging
 
-A longer description of your project goes here...
+This library provides decorators to log various aspects of function execution. It includes decorators to log input arguments, execution time, garbage collection counts, and resource usage.
+
+## Installation
+
+``` pip install debugtoolkit ```
+
+## Usage
+To use these decorators, simply import the decorators library and use the @ symbol followed by the decorator name before the function definition. For example:
+
+```python
+import debugtoolkit
 
 
-<!-- pyscaffold-notes -->
+@debugtoolkit.log_inputs
+def my_function(a, b):
+    return a + b
+```
+This will log the input arguments every time my_function is called.
 
-## Note
+### Contributing
 
-This project has been set up using PyScaffold 4.5. For details and usage
-information on PyScaffold see https://pyscaffold.org/.
+Contributions are welcome. Please submit a pull request with any improvements.
