@@ -1,3 +1,4 @@
+import io
 import logging
 import time
 from unittest import mock
@@ -20,8 +21,7 @@ def test_log_inputs():
 
     with mock.patch.object(logging, "info") as mock_log:
         add(1, 2)
-
-    mock_log.assert_called_once_with("Calling add(1, 2)")
+        mock_log.assert_called_once_with("Calling add(1, 2)")
 
 
 def test_log_time_execution():
@@ -69,7 +69,8 @@ def test_monitor_detailed_resources():
     # Set up logger to capture log messages
     logger = logging.getLogger()
     logger.level = logging.DEBUG
-    stream = logging.StreamHandler()
+    log_stream = io.StringIO()
+    stream = logging.StreamHandler(log_stream)
     logger.addHandler(stream)
     logging.getLogger()
 
@@ -80,7 +81,7 @@ def test_monitor_detailed_resources():
     assert result == 3
 
     # Check the log messages
-    log_messages = stream.output
+    log_messages = log_stream.getvalue()
     assert "Resource usage for add:" in log_messages
     assert "CPU Usage:" in log_messages
     assert "Execution Time:" in log_messages
@@ -100,7 +101,8 @@ def test_monitor_resources():
     # Set up logger to capture log messages
     logger = logging.getLogger()
     logger.level = logging.DEBUG
-    stream = logging.StreamHandler()
+    log_stream = io.StringIO()
+    stream = logging.StreamHandler(log_stream)
     logger.addHandler(stream)
     logging.getLogger()
 
@@ -111,7 +113,7 @@ def test_monitor_resources():
     assert result == 3
 
     # Check the log messages
-    log_messages = stream.output
+    log_messages = log_stream.getvalue()
     assert "Resource usage for add:" in log_messages
     assert "CPU:" in log_messages
     assert "Memory:" in log_messages

@@ -49,7 +49,7 @@ def log_inputs(func):
             f"{k}={safe_repr(v)}" for k, v in kwargs.items()
         ]  # Use safe_repr for keyword arguments
         signature = ", ".join(args_repr + kwargs_repr)
-        logger.info(f"Calling {func.__name__}({signature})")
+        logging.info(f"Calling {func.__name__}({signature})")
         return func(*args, **kwargs)
 
     return wrapper
