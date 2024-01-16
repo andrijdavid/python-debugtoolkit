@@ -1,3 +1,4 @@
+import gc
 import io
 import logging
 import time
@@ -47,7 +48,9 @@ def test_log_garbage_collection():
     @log_garbage_collection
     def create_objects():
         a = [0] * 10000  # Create a large object
-        return a
+        del a  # Delete the object
+        gc.collect()  # Manually trigger garbage collection
+        return None
 
     with mock.patch.object(logging, "info") as mock_log:
         create_objects()
