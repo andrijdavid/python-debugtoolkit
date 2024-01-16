@@ -1,5 +1,5 @@
 """
-    Setup file for python-debugtoolkit.
+    Setup file for debugtoolkit.
     Use setup.cfg to configure your project.
 
     This file was generated with PyScaffold 4.5.

@@ -10,7 +10,7 @@ from .decorators import (  # noqa F401
 
 try:
     # Change here if project is renamed and does not equal the package name
-    dist_name = "python-debugtoolkit"
+    dist_name = "debugtoolkit"
     __version__ = version(dist_name)
 except PackageNotFoundError:  # pragma: no cover
     __version__ = "unknown"

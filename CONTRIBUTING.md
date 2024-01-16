@@ -367,5 +367,5 @@ on [PyPI], the following steps can be used to release a new version for
 ```{todo} Please review and change the following definitions:
 ```
 
-[repository]: https://github.com/<USERNAME>/python-debugtoolkit
-[issue tracker]: https://github.com/<USERNAME>/python-debugtoolkit/issues
+[repository]: https://github.com/andrijdavid/python-debugtoolkit
+[issue tracker]: https://github.com/andrijdavid/python-debugtoolkit/issues
