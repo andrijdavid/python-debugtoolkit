@@ -1,6 +1,6 @@
 # python-debugtoolkit
 
-DebugToolkit is a versatile Python package designed for debuging
+DebugToolkit is a versatile Python package designed for debugging
 
 
 ## Note
