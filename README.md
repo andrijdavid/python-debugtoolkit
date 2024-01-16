@@ -1,9 +1,9 @@
 [![Project generated with PyScaffold](https://img.shields.io/badge/-PyScaffold-005CA0?logo=pyscaffold)](https://pyscaffold.org/)
 [![Coveralls](https://img.shields.io/coveralls/github/andrijdavid/python-debugtoolkit/main.svg)](https://coveralls.io/r/andrijdavid/python-debugtoolkit)
-[![PyPI-Server](https://img.shields.io/pypi/v/python-debugtoolkit.svg)](https://pypi.org/project/python-debugtoolkit/)
-[![Conda-Forge](https://img.shields.io/conda/vn/conda-forge/python-debugtoolkit.svg)](https://anaconda.org/conda-forge/python-debugtoolkit)
+[![PyPI-Server](https://img.shields.io/pypi/v/debugtoolkit.svg)](https://pypi.org/project/debugtoolkit/)
+[![Conda-Forge](https://img.shields.io/conda/vn/conda-forge/debugtoolkit.svg)](https://anaconda.org/conda-forge/debugtoolkit)
 [![ReadTheDocs](https://readthedocs.org/projects/python-debugtoolkit/badge/?version=latest)](https://python-debugtoolkit.readthedocs.io/en/stable/)
-[![Monthly Downloads](https://pepy.tech/badge/python-debugtoolkit/month)](https://pepy.tech/project/python-debugtoolkit)
+[![Monthly Downloads](https://pepy.tech/badge/debugtoolkit/month)](https://pepy.tech/project/debugtoolkit)
 
 # python-debugtoolkit
 
